@@ -33,7 +33,7 @@ Sub Filtering()
                 mybook.Sheets("Temporary List").Range("A2:E" & maRow).Clear                                                         '/After copied, the list in "Temporary list" is deleted.
                 
                 Application.DisplayAlerts = False
-                mybook.Worksheets(1).Delete
+                mybook.Worksheets(1).Delete                                                                                         '/The copied sheet from the file in the folder is deleted.
                 Application.DisplayAlerts = True
                 
             End With
